@@ -1,0 +1,16 @@
+differnce between angular js and angular?
+promises-questions
+wt is promises and how it works?
+if we use promises, we need to get return value?
+if we call a promise can we cancel it? yes
+how many values we can cancel in promise?
+service class? rest full
+routing concepts?
+wt precautions we take to decrease the response time?
+wt is pagenation?
+wt is angular routgaurds?
+form validations?
+how do u prevent applications on security?
+angular forms?
+how to display data into UI from backend? (By using Pi symbol we can do)
+

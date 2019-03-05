@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        // var dateOfBirth = new Date("July 21, 1995, 12:00:00");
+        // document.write(formatDate(dateOfBirth));
+
+        // function formatDate(date){
+        //     var year = date.getFullYear();
+        //     var month = date.getMonth();
+        //      month = month + 1;
+        //     // if(month < 10)
+        //     // {
+        //     //     month = "0" + month;
+        //     // }
+        //     var day = date.getDay();
+        //     // if(day < 10){
+        //     //     day = "0" + day;
+        //     // }
+        //     return month + "/" + day + "/" + year;
+        // }
+            </script>
+    </head>
+    <body>
+         <div id="timeDiv"></div>
+         <input type="text" value="10" id="txtBox" />
+         <br />
+         <input type="button" value="startTimer" onclick ="startTimer('txtBox')" />
+         <input type="button" value="stopTimer" onclick ="stopTimer()" />
+         <!-- <input type="button" value="start clock" onclick="startclock()" />
+         <input type="button" value="stop clock" onclick="stopclock()" /> -->
+       <script type="text/javascript">
+       var intervalID;
+       function startTimer(controlId){
+           var control = document.getElementById(controlId);
+           var seconds = control.value;
+           seconds = seconds - 1;
+           if(seconds == 0)
+           {
+               control.value = "Done";
+               retun;
+           }
+           else{
+               control.value = seconds;
+           }
+           intervalID = setTimeout(function(){startTimer("txtBox")}, 1000);
+       }
+       function stopTimer()
+       {
+           clearTimeout(intervalID);
+       }
+    //    function startclock(){
+    //      intervalID= setInterval(getCurrentDateTime, 1000);
+    //    }
+    //    function stopclock(){
+    //      clearInterval(intervalID);
+    //    }
+    //     function getCurrentDateTime()
+    //     {
+    //         document.getElementById("timeDiv").innerHTML = new Date();
+    //     }  
+    //       getCurrentDateTime(); 
+        </script>
+    </body>
+</html>
